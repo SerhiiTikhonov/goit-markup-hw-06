@@ -196,7 +196,7 @@ body {
 /* ====================================Main styles============================== */
 /* ----------------------section hero-------------------- */
 .hero {
-  max-width: 320px;
+  max-width: 100%;
   max-height: 432px;
   margin-right: auto;
   margin-left: auto;
@@ -261,7 +261,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 100%;
     max-height: 436px;
     padding: 110px 0;
     background-image: linear-gradient(
@@ -354,17 +354,15 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .skills-list {
-    row-gap: 71px;
+    row-gap: 72px;
     flex-wrap: wrap;
+    column-gap: 24px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .skills-list {
-    gap: 24px;
-  }
-
   .skills-item {
     width: calc((100% - 24px) / 2);
+    justify-content: space-between;
   }
   .skills-name {
     text-align: left;
@@ -379,6 +377,9 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+  .skills-list {
+    gap: 24px;
   }
   .skills-item {
     width: calc((100% - 72px) / 4);
@@ -490,6 +491,8 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .person-team-list {
+    width: 552px;
+    margin: auto;
     flex-wrap: wrap;
     row-gap: 62px;
     column-gap: 24px;
@@ -551,7 +554,6 @@ body {
 .possibility-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border: 1px solid #e7e9fc;
 }
 .possibility-container {
   padding: 32px 16px;
@@ -633,13 +635,13 @@ body {
     flex-direction: column;
     gap: 70px;
     width: 285px;
+    justify-content: center;
+    align-items: center;
   }
   .lower-link {
     text-align: center;
   }
-  /* .container-social-media-title {
-    padding-left: 40px;
-  } */
+
   .social-media-title {
     text-align: center;
   }
