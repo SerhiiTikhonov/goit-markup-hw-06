@@ -34,7 +34,7 @@ body {
   background-color: #fff;
 }
 .container {
-  max-width: 288px;
+  max-width: 320px;
   padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
@@ -55,7 +55,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 
@@ -634,7 +634,6 @@ body {
   .footer-container {
     flex-direction: column;
     gap: 70px;
-    width: 285px;
     justify-content: center;
     align-items: center;
   }
@@ -710,7 +709,6 @@ body {
 
 .subscribe-container {
   width: 288px;
-  height: 136px;
 }
 .text-subscribe {
   font-weight: 500;
